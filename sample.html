@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sheets.css">
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#home">
+            <h1>Cuphead</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#characters">characters</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#awards">awards</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- home Section  -->
+  <section id="home">
+    <div class="home-container">
+        <div><video src="./photos/cuphead-cut.mp4" muted loop autoplay></video></div>
+    </div>
+</section>
+<!--End home Section -->
+
+  <!-- character Section -->
+  <section id="characters">
+    <div class="characters container">
+      <div class="character-top">
+        <h1 class="section-title">Meet the Gang</h1>
+        <p>Brothers Cuphead and Mugman are joined by the clever, adventurous Ms. Chalice for a rollicking adventure on a previously undiscovered Inkwell Isle!</p>
+      </div>
+      <div class="character-bottom">
+        <div class="character-item">
+          <div class="icon"><img src="./photos/Cuphoof.png"/></div>
+          <h2>Cuphead</h2>
+          <p>Cuphead is the titular main protagonist of Cuphead. He is Mugman's irresponsible older twin brother and lives on Inkwell Isle. </p>
+        </div>
+        <div class="character-item">
+          <div class="icon"><img src="./photos/Mugman_results.png" /></div>
+          <h2>Mugman</h2>
+          <p>Mugman is the deuteragonist of Cuphead. He is Cuphead's sensible younger twin brother and, like the rest of his family, lives on Inkwell Isle.</p>
+        </div>
+        <div class="character-item">
+          <div class="icon"><img src="./photos/Ms._Chalice_Infobox_Image.png" /></div>
+          <h2>Ms.Chalice</h2>
+          <p>Ms. Chalice is the tritagonist of Cuphead. She was first revealed in the upcoming DLC, Cuphead: The Delicious Last Course.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End character Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./photos/dlc_heroes_cropped_web.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About the Game</h1>
+        <h2>Cuphead the Game</h2>
+        <p>Cuphead is a classic run and gun action game heavily focused on boss battles. Inspired by cartoons of the 1930s, the visuals and audio are painstakingly created with the same techniques of the era, i.e. traditional hand drawn cel animation, watercolor backgrounds, and original jazz recordings.</p>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- awards Section -->
+  <section id="awards">
+    <div class="awards container">
+      <div>
+        <h1 class="section-title">awards</h1>
+      </div>
+      <!-- Swiper -->
+    <div class="awards">
+        <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./photos/1.png" alt="anime awards"></div>
+            <div class="swiper-slide"><img src="./photos/2.png" alt="anime awards"></div>
+            <div class="swiper-slide"><img src="./photos/3.png" alt="anime awards"></div>
+            <div class="swiper-slide"><img src="./photos/4.png" alt="anime awards"></div>
+            <div class="swiper-slide"><img src="./photos/5.png" alt="anime awards"></div>
+            <div class="swiper-slide"><img src="./photos/6.png" alt="anime awards"></div>
+            <div class="swiper-slide"><img src="./photos/7.png" alt="anime awards"></div>
+        </div>
+        <!-- arrows-->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        slidesPerGroup:1,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+        100: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      }
+    });
+    </script>
+    </div>
+  </section>
+  <!-- End awards Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>Cuphead the Game</h1>
+      </div>
+      <h2>StudioMDHR Entertainment Inc.</h2>
+      </div>
+      <p>© CUPHEAD is a trademark of StudioMDHR Entertainment Inc., all rights reserved. Xbox One and the Xbox logos are trademarks of the Microsoft group of companies and are used under license from Microsoft. Nintendo Switch is a trademark of Nintendo. “PlayStation Family Mark” and “PS4 logo” are registered trademarks or trademarks of Sony Interactive Entertainment Inc. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries. The Apple logo is a trademark of Apple Inc., registered in the U.S. and other countries.</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="app.js"></script>
+</body>
+
+</html>
